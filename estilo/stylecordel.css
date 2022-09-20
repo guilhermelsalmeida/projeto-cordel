@@ -5,6 +5,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
 :root {
+    --cor01: #DEBEAB;
+    --cor02: #C4672D;
+    --cor03: #8F4B21;
+    --cor04: #47220B;
+    --cor05: #1f1007;
+
     --fonte01: Verdana, 'Geneva', Tahoma, sans-serif;
     --fonte02: 'Passion One', cursive;
     --fonte03: 'Sriracha', cursive;
@@ -18,12 +24,12 @@
 
 html, body {
     min-height: 100vh;
-    background-color: darkgray;
+    background-color: var(--cor01);
     font-family: var(--fonte01);
 }
 
 header {
-    background-color: black;
+    background-color: var(--cor05);
     color: white;
     text-align: center;
 }
@@ -51,7 +57,7 @@ header a:hover, footer a:hover {
 
 header a:active, footer a:active {
     background-color: white;
-    color: black;
+    color: var(--cor05);
     text-decoration: none;
 }
 
@@ -69,7 +75,7 @@ section > p {
 }
 
 section.normal {
-    background-color: white;
+    background-color: var(--cor01);
     color: black;
 }
 
@@ -84,7 +90,7 @@ section.imagem {
 section.imagem > p {
     display: inline-block;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.514);
+    background-color: rgba(46, 21, 5, 0.616); /* ;  */
     text-shadow: 1px 1px 0px #000;
 }
 
@@ -98,7 +104,7 @@ section#img02 {
 }
 
 footer {
-    background-color: black;
+    background-color: var(--cor05);
     color: white;
     text-align: center;
     padding: 10px;
